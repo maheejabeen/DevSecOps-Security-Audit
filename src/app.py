@@ -1,4 +1,5 @@
-def greet(name):
-    return "Hello " + name
+import subprocess
 
-print(greet("DevSecOps"))
+user_input = input("Enter command: ")
+
+subprocess.call(user_input, shell=True)
